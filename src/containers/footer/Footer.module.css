@@ -1,0 +1,84 @@
+.Footer {
+    width: 100%;
+    margin-top: 2rem;
+    padding: 0.5rem 1rem;
+    background-color: #349399;
+    position: absolute;
+    bottom: 0;
+}
+.Footer .FooterMain{
+    width: 100%;
+    /* margin: 0 auto; */
+}
+.Footer .SocialMain{
+    padding-top: 2rem;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+.Footer .SocialMain .Social{
+    width: 100%;
+height: 2rem;
+display: flex;
+    justify-content: center;
+}
+.Footer .Social .Icon{
+  width: 100%;
+
+}
+.Footer .Social img{
+    
+    height: 1rem;
+
+}
+.Footer .Content{
+    width: 100%; 
+    height: 100%;
+    padding: 1rem 0;
+
+}
+.Footer .Content ul{
+    list-style: none;
+
+}
+.Footer .Content ul h1{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 1rem;
+    color: #FFF;
+}
+.Footer .Content ul li{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 0.9rem;
+    
+}
+.Footer .Content ul li a{
+    color: #242424;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    
+}
+.Footer .Content ul li a:hover{
+    text-decoration: none;
+}
+@media (max-width: 763px){
+    .Footer .Content{
+      display: none;
+    }
+}
+
+
+.Copyright{
+    width: 100%;
+
+}
+.Copyright a{
+    font-size: 0.7rem;
+    color: #FFF;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+}

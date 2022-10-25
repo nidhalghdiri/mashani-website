@@ -1,0 +1,100 @@
+.Contact{
+    width: 100%;
+    background-image: url('../../assets/contactImg2.png');
+background-size: cover;
+background-repeat: no-repeat;
+background-position: 100%;
+}
+
+.Contact .Title{
+    width: 80%;
+    padding: 1rem;
+    margin: 0rem auto;
+}
+.Contact .Title h1{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    /* color: #349499; */
+    color: #ffffff;
+
+}
+.Contact .ContactContent{
+    width: 100%;
+height: 100%;
+/* background-image: url('../../assets/contactImg.jpg');
+background-size: cover;
+background-repeat: no-repeat;
+background-position: 100%; */
+padding: 1rem 0 26rem 0 ;
+}
+.Contact .ContactContent  div{
+    width: 90%;
+    margin: 1rem auto;
+}
+.Contact .ContactContent div form {
+width: 50%;
+display: flex;
+flex-direction: column;
+padding: 1rem;
+}
+.Contact .ContactContent form .FormItem{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.Contact .ContactContent form .FormItem label{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    color: #ffffff;
+    margin: 0 1rem;
+}
+.Contact .ContactContent form .FormItem input{
+    width: 75%;
+    background-color: #ffffff;
+    border: none;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    color: #349499;
+}
+
+.Contact .ContactContent form .FormItem textarea{
+    width: 75%;
+    background-color: #ffffff;
+    border: none;
+    padding: 0.3rem;
+    border-radius: 1rem;
+    color: #349499;
+}
+.Contact .ContactContent div form .Btn{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 4rem;
+}
+.Contact .ContactContent div form button{
+    width: 20%;
+    background-color: #FFF;
+    color: #349499;
+    border-radius: 1rem;
+    /* border: 1px solid #349499; */
+    padding: 0.5rem 1rem;
+    
+}
+
+@media(max-width: 1100px){
+    
+    .Contact .ContactContent div form  {
+    width: 100%;
+}
+}
+@media(max-width:600px){
+    .Contact .ContactContent form .FormItem{
+        flex-direction: column;
+    }
+    
+    .Contact .ContactContent div form .Btn{
+        justify-content: center;
+        padding-right: 0;
+    }
+}

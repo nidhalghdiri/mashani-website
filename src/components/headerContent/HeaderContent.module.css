@@ -1,0 +1,33 @@
+.HeaderContent{
+    width: 100%;
+    /* padding: 0.5rem 0; */
+}
+.HeaderContent .HeaderContent_main{
+    width: 90%;
+    margin: 0 auto;
+}
+.HeaderContent .Logo{
+    width: 100%;
+    margin: 1rem;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.HeaderContent .Logo img{
+    width: 90%;
+}
+
+.HeaderContent .HeaderContent_right{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 2rem;
+}
+.HeaderContent .HeaderContent_right img{
+    margin: 0 0.5rem;
+}
+button:focus {
+    outline: none; 
+}

@@ -1,0 +1,233 @@
+.MainModal{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0%;
+    z-index: 201;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.MainModal .Modal{
+    /* width: 80vw; */
+    width: 80%;
+    /* position: fixed;
+    top: 0;
+    left: 10%; */
+    /* z-index: 201; */
+    padding:0;
+   background-color: #FFF;
+}
+.MainModal .Modal2{
+    width: 40vw;
+
+    padding:0;
+   /* background-color: #FFF; */
+}
+
+.MainModal  .Close{
+    width: 4rem;
+    height: 4rem;
+    position: absolute;
+    top: 1rem;
+    right: 2rem;
+   cursor: pointer;
+}
+.MainModal  .Close .Bar {
+    width: 2rem;
+    height: 0.2rem;
+    background-color: #FFFFFF;
+    /* border: 1px solid #000; */
+        position: absolute;
+    top: 50%;
+    left: 25%;
+}
+.Modal .ModalMain, .Modal2 .ModalMain{
+    width: 100%;
+
+}
+.Modal .ModalMain .Main{
+    width: 90%;
+margin: 0 auto;
+padding: 1rem;
+min-width: 35rem;
+min-height: 35rem;
+height: 100%;
+
+
+
+}
+.Modal2 .ModalMain .Main{
+    width: 90%;
+margin: 0 auto;
+padding: 1rem;
+min-width: 35rem;
+min-height: 35rem;
+height: 100%;
+display:flex ;
+justify-content: center;
+align-items: center;
+
+}
+.Modal2 .ModalMain .Main img{
+    width: 100%;
+    max-width: 100%;
+}
+.Modal .ModalMain .Content .ProductContent{
+    padding: 1rem 0 1rem 2rem;
+margin: 1rem 0;
+/* box-shadow: 0px 6px 10px #CCC; */
+}
+
+.Modal .ModalMain .Content .ProductContent .Title {
+    width: 100%;
+    
+}
+.Modal .ModalMain .Content .ProductContent .Title h1 {
+    font-family: ElMesseriBold, sans-serif;
+    font-weight: bold;
+    color: #242424;
+    margin: 1rem 0;
+    font-size: 1.2rem;
+}
+.Modal .ModalMain .Content .ProductContent .ProductCara h4{
+    font-family: ElMesseriBold, sans-serif;
+    font-weight: bold;
+    color: #349499;
+    margin: 1rem 0;
+    font-size: 0.9rem;
+}
+.Modal .ModalMain .Content .ProductContent .ProductCara li{
+    font-family: ElMesseriBold, sans-serif;
+    color: #242424;
+}
+
+.Modal .ModalMain .Content{
+    width: 100%;
+    margin: 1rem ;
+}
+
+
+
+.ModalOpen {
+    animation: openModal 0.7s ease-out forwards;
+}
+
+.ModalClosed {
+    animation: closeModal 0.7s ease-out forwards;
+}
+.Modal2Open {
+    animation: openModal2 0.7s ease-out forwards;
+}
+
+.Modal2Closed {
+    animation: closeModal2 0.7s ease-out forwards;
+}
+@keyframes openModal {
+    0% {
+        
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+    /* 50% {
+        opacity: 1;
+        transform: translateY(30%);
+    } */
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes closeModal {
+    0% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    /* 50% {
+        opacity: 0.8;
+        transform: translateY(30%);
+    } */
+    100% {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+}
+
+@keyframes openModal2 {
+    0% {
+        
+        opacity: 0;
+        /* transform: translateY(-100%); */
+        /* transform: scale(0.5); */
+    }
+    /* 50% {
+        opacity: 1;
+        transform: translateY(30%);
+    } */
+    100% {
+        opacity: 1;
+        /* transform: translateY(0); */
+        /* transform: scale(1); */
+    }
+}
+@keyframes closeModal2 {
+    0% {
+        opacity: 1;
+        /* transform: translateY(0); */
+        /* transform: scale(1); */
+    }
+    /* 50% {
+        opacity: 0.8;
+        transform: translateY(30%);
+    } */
+    100% {
+        opacity: 0;
+        /* transform: translateY(-100%); */
+        /* transform: scale(0.5); */
+    }
+}
+
+@media(max-width: 1340px){
+    .Modal .ModalMain .Main{
+        width: 100%;
+        background: none;
+    }
+    .Modal .ModalMain .Content{
+        width: 100%;
+    }
+}
+@media(max-width: 768px){
+    .Modal{
+        width: 80vw;
+     
+        left: 10%;
+      
+       
+    }
+    .Modal2{
+        width: 70vw;
+     
+        left: 15%;
+      
+       
+    }
+
+    .Modal .ModalMain .Main{
+        min-width: 100%;
+        height: 100%;
+    }
+    .Modal2 .ModalMain .Main{
+        min-width: 100%;
+        height: 100%;
+    }
+}
+@media(max-width: 500px){
+    .Modal .ModalMain .Title h1 {
+        font-size: 1rem;
+    }
+    .Modal .ModalMain .Content p{
+        font-size: 0.8rem;
+    }
+}
+

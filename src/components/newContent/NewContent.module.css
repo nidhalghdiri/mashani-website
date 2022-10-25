@@ -1,0 +1,54 @@
+.New {
+    width: 80%;
+    margin: 2rem auto;
+}
+.New .NewItem_Main {
+    width: 100%;
+}
+.New .NewItem_Main .NewItem_Content{
+    width: 100%;
+    padding: 1rem;
+}
+.New .NewItem_Main .NewItem_Content h1{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 1rem 0;
+}
+.New .NewItem_Main .NewItem_Content p {
+    width: 90%;
+    color: #565555;
+    font-family: 'Montserrat', sans-serif;
+}
+.New .NewItem_Main .NewItem_img{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.New .NewItems{
+    margin: 1rem 0;
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+}
+.New .NewItems .Item{
+
+    width: 4rem;
+    height: 4rem;
+    margin: 0 1rem;
+    cursor: pointer;
+}
+.New .NewItems .Item img{
+    width: 100%;
+    height: 100%;
+    border: 3px solid #349499;
+    border-radius:1rem ;
+    filter: grayscale(100%);
+    transition: filter 0.3s ease-in-out;
+}
+.New .NewItems .Item img:hover{
+    filter: none;
+    transition: filter 0.3s ease-in-out;
+}

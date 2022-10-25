@@ -1,0 +1,31 @@
+.Spinner{
+    width: 100vw;
+    height: 100vh;
+    background-color: #FFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top:0 ;
+    left: 0;
+    z-index: 300;
+
+}
+.Logo{
+    width: 200px;
+}
+.Logo g.Cercle{
+    animation: cercleAnimate 2s ease-out infinite;
+  transform-origin: 50% 50%;
+}
+@keyframes cercleAnimate {
+    0% {
+     transform: scale(70%);
+    }
+    50% {
+        transform: scale(100%);
+    }
+    100% {
+        transform: scale(70%);
+    }
+}

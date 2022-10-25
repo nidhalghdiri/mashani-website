@@ -1,0 +1,69 @@
+.Slider{
+    width: 100%;
+    position: relative;
+}
+.Slider img{
+    width: 100%;
+}
+.BtnPrev{
+    position: absolute;
+    top:40%;
+    left:3%;
+    border: none;
+    /* background-color: rgba(255, 255, 255, 0.5); */
+    background: none;
+    font-size: 5rem;
+    padding: 0.3rem 1rem;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+.BtnNext{
+    position: absolute;
+    top:40%;
+    right:3%;
+    border: none;
+    /* background-color: rgba(255, 255, 255, 0.5); */
+    background: none;
+    font-size: 5rem;
+    padding: 0.3rem 1rem;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+@media(max-width: 1260px){
+    .BtnPrev{
+        top:30%;
+    }
+    .BtnNext{
+        top:30%;
+    }
+}
+
+@media(max-width: 768px){
+    .BtnPrev{
+        top:20%;
+    }
+    .BtnNext{
+        top:20%;
+    }
+}
+
+@media(max-width: 500px){
+    .BtnPrev{
+        top:10%;
+    }
+    .BtnNext{
+        top:10%;
+    }
+}
+
+
+@media(max-width: 400px){
+    .BtnPrev{
+        top:5%;
+    }
+    .BtnNext{
+        top:5%;
+    }
+}
